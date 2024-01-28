@@ -1,0 +1,31 @@
+<View style={styles.main}>
+            <View style={styles.datesanddayslist}>
+                <View style={styles.datenumbersborder}>
+                    <Text style={styles.datenumbers}>{date - 3}</Text>
+                    <Text>{day - 3 <= 0 ? day === 2? days[6] : day === 1? days[5] : day === 0? days[4] : days[day - 3] : days[day - 3]}</Text>
+                </View>
+                <View style={styles.datenumbersborder}>
+                    <Text style={styles.datenumbers}>{date - 2}</Text>
+                    <Text>{day - 2 <= 0 ? day === 1? days[6] : day === 0? days[5] : days[day - 2] : days[day - 2]}</Text>
+                </View>
+                <View style={styles.datenumbersborder}>
+                    <Text style={styles.datenumbers}>{date - 1}</Text>
+                    <Text>{day - 1 <= 0 ? day === 0? days[6] : days[day - 1] : days[day - 1]}</Text>
+                </View>
+                <View style={styles.datenumbersborder}>
+                    <Text style={styles.datenumbers2}>{date}</Text>
+                    <Text style={{color: 'rgb(223, 189, 67)'}}>{days[day]}</Text>
+                </View>
+                <View style={styles.datenumbersborder}>
+                    <Text style={styles.datenumbers}>{date + 1}</Text>
+                    <Text>{days[day + 1]}</Text>
+                </View>
+                <View style={styles.datenumbersborder}>
+                    <Text style={styles.datenumbers}>{date + 2}</Text>
+                    <Text>{days[day + 2]}</Text>
+                </View>
+                <View style={styles.datenumbersborder}>
+                    <Text style={styles.datenumbers}>{date + 3}</Text>
+                    <Text>{days[day + 3]}</Text>
+                </View>
+            </View>
